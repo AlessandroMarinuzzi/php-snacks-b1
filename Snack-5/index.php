@@ -14,7 +14,8 @@ Ogni punto un nuovo paragrafo. -->
     ''ripigliammo email mmiez 'a user pesc e pesc city pesc e pesc account arò'' user.id = 6 e user.birth_city = city.id e user.account_id = account.id  # retrieves the data of the user with id 6 along joined with his birth city and his account data.";
     #My string exploded in accordance to first parameter limit set.
     $newParagraphs = explode(".",$paragraph);
-
+    #Punctuation disappears in the following case.
+    // $newParagraphs = preg_split('/[.:?!]/',$paragraph);
 ?>
 
 <!DOCTYPE html>
